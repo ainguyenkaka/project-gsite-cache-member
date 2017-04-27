@@ -1,0 +1,29 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath "org.springframework.boot:spring-boot-gradle-plugin:${spring_boot_version}"
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile "com.hazelcast:hazelcast:${hazelcast_version}"
+	compile "com.hazelcast:hazelcast-spring:${hazelcast_version}"
+	compile "org.springframework.boot:spring-boot-starter-actuator"
+	compile "org.springframework.boot:spring-boot-starter-cache"
+	compile "org.springframework.boot:spring-boot-starter-web"
+	testCompile "org.springframework.boot:spring-boot-starter-test"
+}
