@@ -1,7 +1,7 @@
 version: '3'
 services:
-    gsitecustomer-app:
-        image: ainguyen/gsite-micro-customer
+    gsite-cache-manager:
+        image: ainguyen/gsite-cache-manager
         ports:
             - 6000:6000
 
