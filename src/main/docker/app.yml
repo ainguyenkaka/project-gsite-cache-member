@@ -1,0 +1,7 @@
+version: '3'
+services:
+    gsitecustomer-app:
+        image: ainguyen/gsite-micro-customer
+        ports:
+            - 6000:6000
+
