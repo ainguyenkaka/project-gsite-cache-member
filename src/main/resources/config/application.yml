@@ -11,11 +11,11 @@ server:
 application:
     cache:
         hazelcast:
-              group-name: name
-              group-pass: pass
+              group-name: gname
+              group-pass: gpass
               network:
                   enabled-multicast: true
               management-center:
                   enable: false
                   update-interval: 3
-                  url: http://localhost:6000/mancenter
+                  url: http://gsite-cache-member:6000/mancenter

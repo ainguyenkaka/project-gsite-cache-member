@@ -14,8 +14,8 @@ task buildDocker(type: Exec) {
         }
     }
     if (OperatingSystem.current().isWindows()) {
-        commandLine 'cmd', '/c', 'docker', 'image', 'build', '-f', 'build/docker/Dockerfile', '-t', 'ainguyen/gsite-cache-manager', 'build/docker/'
+        commandLine 'cmd', '/c', 'docker', 'image', 'build', '-f', 'build/docker/Dockerfile', '-t', 'ainguyen/gsite-cache-member', 'build/docker/'
     } else {
-        commandLine 'docker', 'image', 'build', '-f', 'build/docker/Dockerfile', '-t', 'ainguyen/gsite-cache-manager', 'build/docker/'
+        commandLine 'docker', 'image', 'build', '-f', 'build/docker/Dockerfile', '-t', 'ainguyen/gsite-cache-member', 'build/docker/'
     }
 }

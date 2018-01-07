@@ -51,7 +51,7 @@ public class ApplicationProperties {
 
 
             public static class Network {
-                private boolean enabledMulticast = false;
+                private boolean enabledMulticast = true;
 
                 public boolean isEnabledMulticast() {
                     return enabledMulticast;
